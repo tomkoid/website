@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Navbar from '$lib/components/Navbar.svelte';
 	import '../app.scss';
 </script>
 
@@ -13,5 +14,7 @@
 	href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+15&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
 	rel="stylesheet"
 />
+
+<Navbar />
 
 <slot />

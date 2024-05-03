@@ -8,7 +8,7 @@
 <div class="w-50 h-50">
 	<a target="_blank" {href}
 		><Icon
-			class="hover:bg-gray-700 transition p-[5px] lg:p-0 rounded-full"
+			class="hover:bg-gray-700 transition p-[5px] xl:p-0 rounded-full"
 			style="font-size: 36px;"
 			{icon}
 		/></a
