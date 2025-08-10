@@ -1,13 +1,8 @@
 <script lang="ts">
 	// import from static
-	import logo from '$lib/assets/pfp.png';
+	import logo from '$lib/assets/logo.png';
 	import SocialLink from '$lib/components/SocialLink.svelte';
-	import { moveBackground } from '$lib/js/bg';
 	import { onMount } from 'svelte';
-
-	onMount(() => {
-		moveBackground();
-	});
 </script>
 
 <div>
@@ -15,7 +10,7 @@
 		class="flex xl:flex-row flex-col lg:flex-nowrap justify-center xl:items-left items-center w-full gap-0 xl:gap-16 pt-20"
 	>
 		<div class="left">
-			<img class="w-fit px-10 md:px-0" id="pfp" src={logo} alt="Moje profilova fotka" />
+			<img class="w-32 px-10 md:px-0" id="pfp" src={logo} alt="Moje profilova fotka" />
 		</div>
 
 		<div class="flex flex-col justify-center right text-center xl:text-left">

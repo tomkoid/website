@@ -1,19 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
 body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	color: #fff;
 	font-family: 'JetBrains Mono', 'Noto Sans', sans-serif;
-	background-image: url('/src/lib/assets/bg.svg');
-	background-repeat: repeat;
-	background-size: cover;
-	resize: both;
-	animation: gradient 60s ease-in-out infinite;
-	background-position: center;
+	/* background-image: url('/src/lib/assets/bg.svg'); */
+	/* background-repeat: repeat; */
+	/* background-size: cover; */
+	/* resize: both; */
+	/* animation: gradient 60s ease-in-out infinite; */
+	/* background-position: center; */
 }
 
 @keyframes gradient {

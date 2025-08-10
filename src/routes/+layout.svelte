@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Navbar from '$lib/components/Navbar.svelte';
+	import '../app.css';
 	import '../app.scss';
 </script>
 
@@ -18,3 +19,4 @@
 <Navbar />
 
 <slot />
+<!-- {@render children()} -->
