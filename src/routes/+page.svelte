@@ -3,6 +3,7 @@
 	import logo from '$lib/assets/logo.png';
 	import SocialLink from '$lib/components/SocialLink.svelte';
 	import Icon from '@iconify/svelte';
+	import { concurrent, scramble } from 'svelte-typewriter';
 
 	import '$lib/css/bg.scss';
 	import { onMount } from 'svelte';
@@ -11,13 +12,14 @@
 <div>
 	<!-- class="flex bg-gradient-to-r from-gray-900 to-zinc-900 xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7" -->
 	<div
-		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7"
+		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-40 py-30 px-7"
 		id="intro-bg"
 	>
 		<div class="flex flex-col flex-wrap justify-center items-center xl:items-start right">
 			<div>
 				<h1
 					class="font-extrabold mx-auto max-w-[800px] text-5xl mb-3 md:text-6xl lg:text-6xl xl:text-6xl xl:text-left text-center"
+					use:scramble={{ scrambleDuration: 1200 }}
 				>
 					Software developer, designer
 				</h1>
@@ -28,7 +30,7 @@
 				</p>
 			</div>
 
-			<div class="flex flex-row flex-wrap items-center mt-6 gap-3">
+			<div class="flex flex-row flex-wrap items-center justify-center mt-8 md:mt-6 gap-3">
 				<!-- Socials -->
 				<div
 					class="backdrop-blur-sm backdrop-brightness-40 bg-gray-500/30 rounded-full py-2 px-3 xl:mx-0 flex flex-row flex-wrap gap-5 w-fit"
@@ -48,7 +50,7 @@
 
 		<div class="left">
 			<img
-				class="w-32 md:w-64 rounded-4xl border border-amber-500"
+				class="w-48 md:w-64 rounded-4xl drop-shadow-3xl border-dashed border-4 border-blue-500/70 hover:border-blue-500 transition-all"
 				id="pfp"
 				src={logo}
 				alt="Moje profilova fotka"
