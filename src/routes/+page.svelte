@@ -24,7 +24,7 @@
 					Software developer, designer
 				</h1>
 				<p
-					class="text-xl text-gray-300 xl:text-left xl:max-w-3xl text-center max-w-2xl mx-auto xl:text-2xl"
+					class="text-xl text-gray-300 xl:text-left xl:max-w-3xl text-center max-w-2xl xl:mx-0 mx-auto xl:text-2xl"
 				>
 					I'm a software engineer and I love to build new things. My name is Tomáš btw.
 				</p>
