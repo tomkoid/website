@@ -28,8 +28,8 @@
 					class="backdrop-blur-sm backdrop-brightness-40 bg-gray-500/30 rounded-full py-2 px-3 xl:mx-0 flex flex-row flex-wrap gap-5 w-fit"
 				>
 					<SocialLink href="https://codeberg.org/tomkoid" icon="simple-icons:codeberg" />
-					<SocialLink href="https://fosstodon.org/@tomkoid" icon="mdi:mastodon" />
 					<SocialLink href="https://github.com/tomkoid" icon="mdi:github" />
+					<SocialLink href="https://fosstodon.org/@tomkoid" icon="mdi:mastodon" />
 				</div>
 				<button
 					class="flex flex-row flex-wrap items-center gap-2 drop-shadow-md transition-all backdrop-blur-sm backdrop-brightness-50 bg-opacity-0 rounded-2xl hover:rounded-3xl hover:px-6 cursor-pointer bg-radial-[at_50%_75%] from-purple-800 from-20% via-60% to-purple-900 text-white px-4 py-3"
