@@ -18,5 +18,7 @@
 
 <Navbar />
 
-<slot />
+<div>
+	<slot />
+</div>
 <!-- {@render children()} -->

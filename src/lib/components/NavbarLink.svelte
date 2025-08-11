@@ -15,4 +15,5 @@
 >
 	<Icon style={`font-size: ${iconSize}px;`} {icon} />
 	{text}
+	<slot />
 </a>
