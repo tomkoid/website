@@ -4,7 +4,7 @@
 	import NavbarSection from './NavbarSection.svelte';
 </script>
 
-<nav class="fixed left-0 right-0 top-0 p-5 flex flex-row items-center justify-between">
+<nav class="fixed z-10 left-0 right-0 top-0 p-5 flex flex-row items-center justify-between">
 	<NavbarSection>
 		<div class="flex flex-nowrap">
 			<NavbarLink href="/" icon="mdi:home">

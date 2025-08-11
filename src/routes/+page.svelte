@@ -3,26 +3,32 @@
 	import logo from '$lib/assets/logo.png';
 	import SocialLink from '$lib/components/SocialLink.svelte';
 	import Icon from '@iconify/svelte';
+
+	import '$lib/css/bg.scss';
 	import { onMount } from 'svelte';
 </script>
 
 <div>
+	<!-- class="flex bg-gradient-to-r from-gray-900 to-zinc-900 xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7" -->
 	<div
-		class="flex bg-gradient-to-r from-gray-900 to-zinc-900 xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7"
+		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7"
+		id="intro-bg"
 	>
-		<div class="flex flex-col flex-wrap justify-center right">
+		<div class="flex flex-col flex-wrap justify-center items-center xl:items-start right">
 			<div>
 				<h1
-					class="font-extrabold max-w-[800px] text-5xl mb-3 md:text-6xl lg:text-6xl xl:text-6xl xl:text-left text-center"
+					class="font-extrabold mx-auto max-w-[800px] text-5xl mb-3 md:text-6xl lg:text-6xl xl:text-6xl xl:text-left text-center"
 				>
 					Software developer, designer
 				</h1>
-				<p class="text-xl text-gray-300 xl:text-left xl:max-w-3xl text-center w-full xl:text-2xl">
+				<p
+					class="text-xl text-gray-300 xl:text-left xl:max-w-3xl text-center max-w-2xl mx-auto xl:text-2xl"
+				>
 					I'm a software engineer and I love to build new things. My name is Tomáš btw.
 				</p>
 			</div>
 
-			<div class="flex flex-row items-center mt-6 gap-3">
+			<div class="flex flex-row flex-wrap items-center mt-6 gap-3">
 				<!-- Socials -->
 				<div
 					class="backdrop-blur-sm backdrop-brightness-40 bg-gray-500/30 rounded-full py-2 px-3 xl:mx-0 flex flex-row flex-wrap gap-5 w-fit"

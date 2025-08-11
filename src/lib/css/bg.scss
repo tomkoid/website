@@ -1,0 +1,32 @@
+#intro-bg {
+  position: relative;
+  overflow: hidden; /* hide blurred edges */
+  z-index: 0;
+}
+
+/* background copied into pseudo, blurred, scaled to hide edges */
+#intro-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0; /* behind content */
+  pointer-events: none;
+  will-change: filter, transform;
+
+  /* copy your background here */
+  background-color: #11111b;
+  background-image:
+    radial-gradient(#11111b 15%, transparent 16%),
+    radial-gradient(#89b4fa 15%, transparent 16%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+
+  filter: blur(12px);      /* adjust strength */
+  transform: scale(2.0); /* hide blurred edges */
+}
+
+/* ensure actual content sits above the blurred layer */
+#intro-bg > * {
+  position: relative;
+  z-index: 1;
+}
