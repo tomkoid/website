@@ -12,7 +12,7 @@
 <div>
 	<!-- class="flex bg-gradient-to-r from-gray-900 to-zinc-900 xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7" -->
 	<div
-		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-40 py-30 px-7"
+		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full h-screen gap-8 xl:gap-16 pt-40 py-30 px-7"
 		id="intro-bg"
 	>
 		<div class="flex flex-col flex-wrap justify-center items-center xl:items-start right">
@@ -26,7 +26,8 @@
 				<p
 					class="text-xl text-gray-300 xl:text-left xl:max-w-3xl text-center max-w-2xl xl:mx-0 mx-auto xl:text-2xl"
 				>
-					I'm a software engineer and I love to build new things. My name is Tomáš btw.
+					I'm a software engineer, an advocate for free and open-source software, and I love
+					building new things. My name is Tomáš.
 				</p>
 			</div>
 
@@ -39,18 +40,19 @@
 					<SocialLink href="https://github.com/tomkoid" icon="mdi:github" />
 					<SocialLink href="https://fosstodon.org/@tomkoid" icon="mdi:mastodon" />
 				</div>
-				<button
+				<a
 					class="flex flex-row flex-wrap items-center gap-2 drop-shadow-md transition-all backdrop-blur-sm backdrop-brightness-50 bg-opacity-0 rounded-2xl hover:rounded-3xl hover:px-6 cursor-pointer bg-radial-[at_50%_75%] from-purple-800 from-20% via-60% to-purple-900 text-white px-4 py-3"
+					href="mailto:tomkoid@disroot.org"
 				>
 					<Icon width="24" icon="mdi:email" />
 					Contact me
-				</button>
+				</a>
 			</div>
 		</div>
 
 		<div class="left">
 			<img
-				class="w-48 md:w-64 rounded-4xl drop-shadow-3xl border-dashed border-4 border-blue-500/70 hover:border-blue-500 transition-all"
+				class="w-48 md:w-64 xl:w-80 rounded-4xl drop-shadow-3xl border-dashed border-4 border-blue-500/70 hover:border-blue-500 transition-all"
 				id="pfp"
 				src={logo}
 				alt="Moje profilova fotka"
