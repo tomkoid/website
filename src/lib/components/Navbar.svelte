@@ -7,7 +7,7 @@
 <nav class="fixed z-10 left-0 right-0 top-0 p-5 flex flex-row items-center justify-between">
 	<NavbarSection>
 		<div class="flex flex-nowrap">
-			<NavbarLink href="/" icon="mdi:home">
+			<NavbarLink href="/" inNewTab={false} icon="mdi:home">
 				<p class="text-2xl font-bold pr-2">Tomkoid</p>
 			</NavbarLink>
 		</div>
