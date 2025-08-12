@@ -3,7 +3,7 @@
 	import logo from '$lib/assets/logo.png';
 	import SocialLink from '$lib/components/SocialLink.svelte';
 	import Icon from '@iconify/svelte';
-	import { concurrent, scramble } from 'svelte-typewriter';
+	import { scramble } from 'svelte-typewriter';
 
 	import '$lib/css/bg.scss';
 	import { onMount } from 'svelte';
@@ -14,10 +14,10 @@
 	});
 </script>
 
-<div>
+<div class="bg-gradient-to-r from-gray-900 to-zinc-900 min-h-screen h-fit">
 	<!-- class="flex bg-gradient-to-r from-gray-900 to-zinc-900 xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7" -->
 	<div
-		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full h-screen gap-8 xl:gap-16 pt-40 py-30 px-7"
+		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-30 md:pt-35 xl:pt-45 pb-30 xl:pb-40 px-7"
 		id="intro-bg"
 	>
 		<div class="flex flex-col flex-wrap justify-center items-center xl:items-start right">
@@ -64,6 +64,33 @@
 			/>
 		</div>
 	</div>
+
+	<section class="py-5 pb-20 px-7 max-w-5xl mx-auto">
+		<p class="text-xl text-gray-300 text-center xl:text-left mb-10">
+			Over the years, I’ve made several projects. Here are some of the things I’ve been working on
+			recently:
+		</p>
+
+		<!-- Project list placeholder -->
+		<div class="grid gap-8 md:grid-cols-2">
+			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
+				<h2 class="text-2xl font-bold mb-2">Stravule</h2>
+				<p>lorem ipsum</p>
+			</div>
+			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
+				<h2 class="text-2xl font-bold mb-2">reŠOL</h2>
+				<p>lorem ipsum</p>
+			</div>
+			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
+				<h2 class="text-2xl font-bold mb-2">Blokator</h2>
+				<p>lorem ipsum</p>
+			</div>
+			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
+				<h2 class="text-2xl font-bold mb-2">mdhtml</h2>
+				<p>lorem ipsum</p>
+			</div>
+		</div>
+	</section>
 </div>
 
 <!-- <h1>Welcome to SvelteKit</h1> -->
