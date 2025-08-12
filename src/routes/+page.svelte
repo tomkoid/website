@@ -8,6 +8,7 @@
 	import '$lib/css/bg.scss';
 	import { onMount } from 'svelte';
 	import { mouseGlowFollow } from '$lib/js/bg';
+	import { ProjectTable, Project } from '$lib/components/home/project_table';
 
 	onMount(() => {
 		mouseGlowFollow();
@@ -71,25 +72,32 @@
 			to see:
 		</p>
 
-		<!-- Project list placeholder -->
-		<div class="grid gap-8 md:grid-cols-2">
-			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
-				<h2 class="text-2xl font-bold mb-2">Stravule</h2>
-				<p>Automatic food picker for strava.cz that selects meals based on user-defined filters</p>
-			</div>
-			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
-				<h2 class="text-2xl font-bold mb-2">reŠOL</h2>
-				<p>A modern, privacy-focused web app improving the Škola OnLine experience</p>
-			</div>
-			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
-				<h2 class="text-2xl font-bold mb-2">Blokator</h2>
-				<p>System-wide CLI adblocker for Linux, MacOS and Windows</p>
-			</div>
-			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
-				<h2 class="text-2xl font-bold mb-2">mdhtml</h2>
-				<p>Really simple CLI Markdown to HTML converter with styling support</p>
-			</div>
-		</div>
+		<ProjectTable>
+			<Project
+				name="Stravule"
+				description="Automatic food picker for strava.cz that selects meals based on user-defined filters"
+			/>
+			<Project
+				name="reŠOL"
+				description="A modern, privacy-focused web app improving the Škola OnLine experience"
+			/>
+			<Project
+				name="Image Chat"
+				description="An open-source application that uses AI to analyze photos and describes their contents using text-to-speech technology (2024 AimtecHackathon winning project)"
+			/>
+			<Project
+				name="Blokator"
+				description="System-wide CLI adblocker for Linux, MacOS and Windows"
+			/>
+			<Project
+				name="mdhtml"
+				description="Really simple CLI Markdown to HTML converter with styling support"
+			/>
+			<Project
+				name="Final Trial"
+				description="A simple game made in Godot engine that runs on Android, PC and web. Your goal is to bounce the good guys to Heaven and let the bad ones fall to Hell"
+			/>
+		</ProjectTable>
 	</section>
 </div>
 
