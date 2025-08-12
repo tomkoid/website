@@ -46,7 +46,7 @@
 					<SocialLink href="https://fosstodon.org/@tomkoid" icon="mdi:mastodon" />
 				</div>
 				<a
-					class="flex flex-row flex-wrap items-center gap-2 drop-shadow-md transition-all backdrop-blur-sm backdrop-brightness-50 bg-opacity-0 rounded-2xl hover:rounded-3xl hover:px-6 cursor-pointer bg-radial-[at_50%_75%] from-purple-800 from-20% via-60% to-purple-900 text-white px-4 py-3"
+					class="flex flex-row flex-wrap items-center gap-2 drop-shadow-md transition-all backdrop-blur-sm backdrop-brightness-50 bg-opacity-0 rounded-2xl hover:rounded-3xl hover:xl:px-4 hover:px-6 cursor-pointer bg-radial-[at_50%_75%] from-purple-800 from-20% via-60% to-purple-900 text-white px-4 py-3"
 					href="mailto:tomkoid@disroot.org"
 				>
 					<Icon width="24" icon="mdi:email" />
