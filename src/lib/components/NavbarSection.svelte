@@ -1,9 +1,6 @@
-<script lang="ts">
-	const bgOpacity = 20;
-</script>
-
 <div
 	class={`w-fit drop-shadow-xl
+	backdrop-blur-sm
 	transition-all duration-500 relative z-10 overflow-hidden bg-gradient-to-r from-zinc-800/20 from-40% to-teal-800/20
 before:absolute before:rounded-full before:top-0 before:left-0
 before:w-full before:h-full
