@@ -67,27 +67,27 @@
 
 	<section class="py-5 pb-20 px-7 max-w-5xl mx-auto">
 		<p class="text-xl text-gray-300 text-center xl:text-left mb-10">
-			Over the years, I’ve made several projects. Here are some of the things I’ve been working on
-			recently:
+			Over the years, I’ve worked on several projects. Here are some of the things I’d most like you
+			to see:
 		</p>
 
 		<!-- Project list placeholder -->
 		<div class="grid gap-8 md:grid-cols-2">
 			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
 				<h2 class="text-2xl font-bold mb-2">Stravule</h2>
-				<p>lorem ipsum</p>
+				<p>Automatic food picker for strava.cz that selects meals based on user-defined filters</p>
 			</div>
 			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
 				<h2 class="text-2xl font-bold mb-2">reŠOL</h2>
-				<p>lorem ipsum</p>
+				<p>A modern, privacy-focused web app improving the Škola OnLine experience</p>
 			</div>
 			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
 				<h2 class="text-2xl font-bold mb-2">Blokator</h2>
-				<p>lorem ipsum</p>
+				<p>System-wide CLI adblocker for Linux, MacOS and Windows</p>
 			</div>
 			<div class="p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md">
 				<h2 class="text-2xl font-bold mb-2">mdhtml</h2>
-				<p>lorem ipsum</p>
+				<p>Really simple CLI Markdown to HTML converter with styling support</p>
 			</div>
 		</div>
 	</section>
