@@ -7,6 +7,11 @@
 
 	import '$lib/css/bg.scss';
 	import { onMount } from 'svelte';
+	import { mouseGlowFollow } from '$lib/js/bg';
+
+	onMount(() => {
+		mouseGlowFollow();
+	});
 </script>
 
 <div>

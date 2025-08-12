@@ -1,32 +1,68 @@
 #intro-bg {
   position: relative;
-  overflow: hidden; /* hide blurred edges */
+  overflow: hidden;
   z-index: 0;
 }
 
-/* background copied into pseudo, blurred, scaled to hide edges */
+/* Animated background */
 #intro-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 0; /* behind content */
+  z-index: 0;
   pointer-events: none;
-  will-change: filter, transform;
-
-  /* copy your background here */
   background-color: #11111b;
   background-image:
     radial-gradient(#11111b 15%, transparent 16%),
     radial-gradient(#4c4f69 15%, transparent 16%);
   background-size: 60px 60px;
   background-position: 0 0, 30px 30px;
-
-  filter: blur(12px);      /* adjust strength */
-  transform: scale(2.0); /* hide blurred edges */
+  filter: blur(12px);
+  transform: scale(2.0);
+  animation:
+    float-layer1 30s ease-in-out infinite,
+    float-layer2 45s ease-in-out infinite;
 }
 
-/* ensure actual content sits above the blurred layer */
+/* Highlight glow layer */
+#intro-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1; /* sits above background but under content */
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+              hsl(23deg, 92%, 5%) 0px,
+              transparent 180px);
+  mix-blend-mode: screen; /* makes it brighten only under the glow */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show glow on hover */
+#intro-bg:hover::after {
+  opacity: 1;
+}
+
+/* Content */
 #intro-bg > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+}
+
+/* Keyframes same as before */
+@keyframes float-layer1 {
+  0%   { background-position: 0px 0px, 30px 30px; }
+  25%  { background-position: 40px 20px, 30px 30px; }
+  50%  { background-position: 80px 40px, 30px 30px; }
+  75%  { background-position: 40px 60px, 30px 30px; }
+  100% { background-position: 0px 0px, 30px 30px; }
+}
+
+@keyframes float-layer2 {
+  0%   { background-position: 0px 0px, 30px 30px; }
+  25%  { background-position: 0px 0px, 50px 50px; }
+  50%  { background-position: 0px 0px, 70px 70px; }
+  75%  { background-position: 0px 0px, 50px 50px; }
+  100% { background-position: 0px 0px, 30px 30px; }
 }
