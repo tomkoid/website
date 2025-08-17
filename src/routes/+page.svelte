@@ -109,7 +109,7 @@
 			/>
 			<Project
 				name="mdhtml"
-				description="Really simple CLI Markdown to HTML converter with styling support"
+				description="Really simple CLI Markdown to HTML converter with styling support written in Go"
 				link="https://codeberg.org/tomkoid/mdhtml"
 				logoPath="/logos/mdhtml.webp"
 			/>
