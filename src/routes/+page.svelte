@@ -15,6 +15,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Tomkoid</title>
+</svelte:head>
+
 <div class="bg-gradient-to-r from-gray-900 to-zinc-900 min-h-screen h-fit">
 	<!-- class="flex bg-gradient-to-r from-gray-900 to-zinc-900 xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7" -->
 	<div
