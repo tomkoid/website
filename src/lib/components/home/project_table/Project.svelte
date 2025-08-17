@@ -16,7 +16,7 @@
 				class="min-w-16 md:min-w-24 xl:min-w-32 w-32 rounded-4xl drop-shadow-3xl border-dashed border-4 border-orange-400/70 hover:border-orange-500 transition-all"
 				id="pfp"
 				src={logoPath}
-				alt="Moje profilova fotka"
+				alt={name}
 			/>
 		</a>
 	</div>
