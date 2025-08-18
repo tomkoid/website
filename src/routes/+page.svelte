@@ -22,7 +22,7 @@
 <div class="bg-gradient-to-r from-gray-900 to-zinc-900 min-h-screen h-fit">
 	<!-- class="flex bg-gradient-to-r from-gray-900 to-zinc-900 xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-50 py-30 px-7" -->
 	<div
-		class="flex backdrop-blur-3xl xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-30 md:pt-35 xl:pt-45 pb-30 xl:pb-40 px-7"
+		class="flex xl:flex-row flex-col-reverse lg:flex-nowrap justify-center xl:items-left items-center w-full gap-8 xl:gap-16 pt-30 md:pt-35 xl:pt-45 pb-30 xl:pb-40 px-7"
 		id="intro-bg"
 	>
 		<div class="flex flex-col flex-wrap justify-center items-center xl:items-start right">
