@@ -13,7 +13,7 @@
 	<div>
 		<a href={link}>
 			<img
-				class="min-w-16 md:min-w-24 xl:min-w-32 w-32 rounded-4xl drop-shadow-3xl border-dashed border-4 border-orange-400/70 hover:border-orange-500 transition-all"
+				class="min-w-16 md:min-w-24 xl:min-w-32 w-32 min-h-16 md:min-h-24 xl:min-h-32 h-32 object-scale-down rounded-4xl drop-shadow-3xl border-dashed border-4 border-orange-400/70 hover:border-orange-500 transition-all"
 				id="pfp"
 				src={logoPath}
 				alt={name}
