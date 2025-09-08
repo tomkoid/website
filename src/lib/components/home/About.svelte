@@ -4,7 +4,7 @@
 
 <div class="px-7 max-w-5xl mx-auto pb-25">
 	<h1 class="text-4xl font-bold mb-4 flex justify-center underline">About me</h1>
-	<div class="flex flex-wrap flex-col gap-3 text-xl">
+	<div class="flex flex-wrap flex-col gap-3 text-xl text-gray-200">
 		<p>
 			I'm <b>a software engineer</b> and <b>an advocate of FOSS software</b> and when I'm not programming
 			I usually learn what I find interesting at the moment.
