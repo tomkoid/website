@@ -2,16 +2,17 @@
 	import '$lib/css/bg.scss';
 	import { onMount } from 'svelte';
 	import { mouseGlowFollow } from '$lib/js/bg';
-	import { fly } from 'svelte/transition';
 	import About from '$lib/components/home/About.svelte';
 	import MainCard from '$lib/components/home/MainCard.svelte';
 	import Projects from '$lib/components/home/Projects.svelte';
+	import Main from '$lib/components/home/Main.svelte';
 
 	let visible = $state(false);
 
 	onMount(() => {
 		mouseGlowFollow();
 
+		// delay showing projects
 		setTimeout(() => {
 			visible = true;
 		}, 200);
@@ -22,14 +23,14 @@
 	<title>Tomkoid</title>
 </svelte:head>
 
-<div class="bg-gradient-to-r from-gray-900 to-zinc-900 min-h-screen h-fit">
+<Main>
 	<MainCard />
 
 	{#if visible}
 		<Projects />
 		<About />
 	{/if}
-</div>
+</Main>
 
 <!-- <h1>Welcome to SvelteKit</h1> -->
 <!-- <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p> -->
