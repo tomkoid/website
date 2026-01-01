@@ -38,10 +38,30 @@
     filter: blur(0.5em);
   }
 
-  transform: scale(2.0);
+  /* Hint compositing; helps reduce repaints in some browsers */
+  will-change: transform;
+  transform: translateZ(0) scale(2.0);
   animation:
     float-layer1 30s ease-in-out infinite,
     float-layer2 45s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #intro-bg::before {
+    animation: none;
+  }
+}
+
+/* Firefox (especially mobile) can struggle with animating a blurred layer. */
+@supports (-moz-appearance: none) {
+  @media (pointer: coarse) {
+    #intro-bg::before {
+      animation: none;
+      /* Keep the blur effect but avoid smearing the dot pattern into a solid color. */
+      filter: blur(0.25em);
+      transform: translateZ(0) scale(1.6);
+    }
+  }
 }
 
 /* Highlight glow layer */
