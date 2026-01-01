@@ -12,7 +12,7 @@
 	<div class="flex flex-col flex-wrap justify-center items-center xl:items-start right">
 		<div>
 			<h1
-				class="font-extrabold mx-auto max-w-[800px] text-5xl mb-3 md:text-6xl lg:text-6xl xl:text-6xl xl:text-left text-center"
+				class="mono font-extrabold mx-auto max-w-[800px] text-5xl mb-3 md:text-6xl lg:text-6xl xl:text-6xl xl:text-left text-center"
 				use:scramble={{ scrambleDuration: 1200 }}
 			>
 				Software engineer, designer
