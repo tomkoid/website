@@ -8,7 +8,7 @@
 </script>
 
 <div
-	class="flex flex-col xl:flex-row flex-nowrap gap-6 items-center transition-all p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md border border-gray-800 hover:border-gray-600"
+	class="flex flex-col xl:flex-row flex-nowrap gap-6 items-center transition-all p-6 rounded-2xl bg-gray-800/50 border border-gray-800 hover:border-gray-600"
 >
 	<div>
 		<a href={link}>

@@ -13,6 +13,7 @@ export async function moveBackground() {
 export function mouseGlowFollow() {
   const introBg = document.getElementById('intro-bg');
   if (!introBg) return;
+  if (!isTouchOnly()) return;
 
   introBg.addEventListener('mousemove', (e) => {
     const rect = introBg.getBoundingClientRect();
@@ -21,4 +22,12 @@ export function mouseGlowFollow() {
     introBg.style.setProperty('--mouse-x', x);
     introBg.style.setProperty('--mouse-y', y);
   });
+}
+
+
+function isTouchOnly() {
+  return (
+    window.matchMedia('(pointer: coarse)').matches &&
+    window.matchMedia('(hover: none)').matches
+  );
 }
