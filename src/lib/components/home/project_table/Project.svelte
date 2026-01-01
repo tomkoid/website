@@ -8,7 +8,7 @@
 </script>
 
 <div
-	class="flex flex-col xl:flex-row flex-nowrap gap-6 transition-all p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md border border-gray-800 hover:border-gray-600"
+	class="flex flex-col xl:flex-row flex-nowrap gap-6 items-center transition-all p-6 rounded-2xl bg-gray-800/50 backdrop-blur-md border border-gray-800 hover:border-gray-600"
 >
 	<div>
 		<a href={link}>
@@ -23,7 +23,7 @@
 	<div>
 		<div class="text-2xl font-bold mb-2">
 			{#if link != ''}
-				<div class="flex flex-row items-center gap-3">
+				<div class="flex flex-row items-center xl:justify-start justify-center gap-3">
 					<a
 						class="transition-all hover:underline hover:text-purple-300"
 						href={link}
@@ -41,6 +41,6 @@
 			{/if}
 		</div>
 
-		<p>{description}</p>
+		<p class="xl:text-start text-center">{description}</p>
 	</div>
 </div>
