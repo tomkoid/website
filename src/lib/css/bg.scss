@@ -26,6 +26,13 @@
   background-size: 10em 10em;
   background-position: 0 0, 30px 30px;
 
+  /* Hint compositing; helps reduce repaints in some browsers */
+  will-change: transform;
+  transform: translateZ(0) scale(2.0);
+  animation:
+    float-layer1 30s ease-in-out infinite,
+    float-layer2 45s ease-in-out infinite;
+
   @media (min-width: 1124px) {
     filter: blur(2em);
   }
@@ -37,13 +44,6 @@
   @media (max-width: 600px) {
     filter: blur(0.5em);
   }
-
-  /* Hint compositing; helps reduce repaints in some browsers */
-  will-change: transform;
-  transform: translateZ(0) scale(2.0);
-  animation:
-    float-layer1 30s ease-in-out infinite,
-    float-layer2 45s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

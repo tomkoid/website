@@ -41,8 +41,17 @@ body {
 /* Firefox mobile can struggle with backdrop-filter on fixed elements while scrolling. */
 @supports (-moz-appearance: none) {
 	@media (pointer: coarse) {
+		/* Backdrop blur is particularly expensive in Firefox Android (fixed + scroll). */
 		nav .backdrop-blur-xs {
 			--tw-backdrop-blur: blur(1px) !important;
+			contain: paint;
+			backdrop-filter: var(--tw-backdrop-filter) !important;
+		}
+
+		/* Also reduce blur on larger "glass" pills/buttons (still blurred, but cheaper). */
+		.backdrop-blur-sm {
+			--tw-backdrop-blur: blur(2px) !important;
+			contain: paint;
 			backdrop-filter: var(--tw-backdrop-filter) !important;
 		}
 	}
