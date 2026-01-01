@@ -14,8 +14,9 @@
 <a
 	{href}
 	{target}
+	rel={inNewTab ? 'noreferrer noopener' : undefined}
 	class={classes +
-		' h-full w-full flex flex-row items-center gap-2 text-2xl text-gray-300 transition-all hover:px-2'}
+		' h-full w-full flex flex-row items-center gap-2 text-2xl text-gray-300 transition-colors hover:text-white'}
 >
 	<Icon style={`font-size: ${iconSize}px;`} {icon} />
 	{text}

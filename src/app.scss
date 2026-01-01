@@ -38,6 +38,15 @@ body {
 	/* height: 100vh; */
 }
 
+/* Better spacing on notched phones. */
+@media (max-width: 600px) {
+	nav {
+		padding-top: calc(env(safe-area-inset-top) + 0.75rem);
+		padding-left: calc(env(safe-area-inset-left) + 0.75rem);
+		padding-right: calc(env(safe-area-inset-right) + 0.75rem);
+	}
+}
+
 /* Firefox mobile can struggle with backdrop-filter on fixed elements while scrolling. */
 @supports (-moz-appearance: none) {
 	@media (pointer: coarse) {
